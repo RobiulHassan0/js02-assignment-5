@@ -146,12 +146,32 @@
           </div>
         </div>
       </section>
+
       <!-- History Section -->
-      <section id="show-history" class="max-w-screen-xl mx-auto mt-6 border rounded-2xl">
+      <section id="show-history" class="hidden max-w-screen-xl mx-auto mt-6 border rounded-2xl">
         <div class="space-y-4 p-8 ">
           <!-- <h2 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
           <p class="text-lg">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p> -->
         </div>
+      </section>
+
+      <!-- Modal Section -->
+      <section>
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box flex flex-col justify-center items-center gap-6 w-full max-w-2xl">
+            <h3 class="text-5xl font-bold pt-4">Congrats!</h3>
+            <img class="w-14" src="assets/coin.png" alt="">
+            <p class="mt-8 text-2xl text-center">You have Donated for Humankind </p>
+            <h4 class="text-3xl font-bold">Successfully</h4> 
+            
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="bg-[#B4F461] text-xl rounded-lg px-7 py-4">Close Confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog> 
       </section>
     </main>
     <!-- Main End -->
