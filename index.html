@@ -84,13 +84,13 @@
           <div class="flex flex-col justify-between ml-10 flex-1">
             <div class="space-y-4">
               <button class="btn w-44 text-lg text-[rgba(17,17,17,0.6)]">
-                <img class="w-6" src="assets/coin.png" alt=""> <span id="btn-done-noakhali">0</span> BDT
+                <img class="w-6" src="assets/coin.png" alt=""> <span id="doneted-noakhali">0</span> BDT
               </button>
               <h2 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
               <p class="text-[rgba(17,17,17,0.6)] text-[22px] font-light">The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies and support to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             </div>
             <div class="flex flex-col gap-8">
-              <input type="text" id="noakhali-input"
+              <input type="text" id="input-noakhali"
               class="input validator font-light input-bordered py-7"
               required autocomplete="off"
               placeholder="Write Donation Amount"/>
@@ -107,7 +107,7 @@
           <div class="flex flex-col justify-between ml-10 flex-1">
             <div class="space-y-4">
               <button class="btn w-44 text-lg text-[rgba(17,17,17,0.6)]">
-                <img class="w-6" src="assets/coin.png" alt=""> 600 BDT
+                <img class="w-6" src="assets/coin.png" alt=""> <span id="doneted-feni">600</span> BDT
               </button>
               <h2 class="text-3xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
               <p class="text-[rgba(17,17,17,0.6)] text-[22px] font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
@@ -115,7 +115,7 @@
             <div class="flex flex-col gap-4">
               <input type="number"
               class="input validator font-light input-bordered py-7"
-              required
+              required id="input-feni"
               placeholder="Write Donation Amount"
               title="Donation amount must be a positive number"/>
               <button id="btn-donate-feni" class="bg-[#B4F461] rounded-lg text-xl py-4 font-bold">Donate Now</button>
@@ -131,7 +131,7 @@
           <div class="flex flex-col justify-between ml-10 flex-1">
             <div class="space-y-4">
               <button class="btn w-44 text-lg text-[rgba(17,17,17,0.6)]">
-                <img class="w-6" src="assets/coin.png" alt=""> 2400 BDT
+                <img class="w-6" src="assets/coin.png" alt=""> <span id="doneted-injured">2400</span>BDT
               </button>
               <h2 class="text-3xl font-bold">Aid for Injured in the Quota Movement</h2>
               <p class="text-[rgba(17,17,17,0.6)] text-[22px] font-light">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
@@ -139,9 +139,8 @@
             <div class="flex flex-col gap-4">
               <input type="number"
               class="input validator font-light input-bordered py-7"
-              required
-              placeholder="Write Donation Amount"
-              title="Donation amount must be a positive number"/>
+              required id="input-injured"
+              placeholder="Write Donation Amount"/>
               <button id="btn-donate-injured" class="bg-[#B4F461] rounded-lg text-xl py-4 font-bold">Donate Now</button>
             </div>
           </div>
@@ -157,5 +156,8 @@
 
     <!-- Javascript Connect -->
      <script src="index.js"></script>
+     <!-- <script src="index2.js"></script> -->
+     <script src="utilities.js"></script>
+     <!-- <script src="utilities2.js"></script> -->
   </body>
 </html>
