@@ -63,24 +63,55 @@
     <!-- Main Start -->
     <main class="max-w-[1440px] mx-auto pt-44">
       <!-- FAQ Section -->
-      <section class=" mt-5">
+      <section class=" my-5">
         <h2 class="text-4xl mb-12 font-bold">Important FAQ</h2>
         <div>
           <div class="join join-vertical bg-base-100 w-full">
-            <div class="collapse collapse-arrow join-item border-base-300 border">
+            <div class="collapse collapse-arrow join-item border-base-300 border px-6 py-4">
               <input type="radio" name="my-accordion-4" checked="checked" />
-              <div class="collapse-title font-semibold">How do I create an account?</div>
-              <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+              <div class="collapse-title font-semibold text-2xl">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content text-lg text-gray-600">The DOM is a programming interface for web documents. It represents the structure of an HTML or XML page as a tree of objects, allowing JavaScript to access, modify, or delete elements dynamically.</div>
             </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
+            <div class="collapse collapse-arrow join-item border-base-300 border px-6 py-4">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-              <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+              <div class="collapse-title font-semibold text-2xl">How do you select an element from the DOM?</div>
+              <div class="collapse-content text-lg text-gray-600">
+                <p class="font-bold text-xl pb-2">You can select an element using methods like:</p>
+                <ul class="list-inside list-disc">
+                  <li>document.getElementById('id')</li>
+                  <li>document.querySelector('.class' or '#id')</li>
+                  <li>document.getElementsByClassName('class')</li>
+                  <li>document.getElementsByTagName('tagname')</li>
+                </ul>
+              </div>
             </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
+            <div class="collapse collapse-arrow join-item border-base-300 border px-6 py-4">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title font-semibold">How do I update my profile information?</div>
-              <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+              <div class="collapse-title font-semibold text-2xl">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content text-lg text-gray-600">
+                <p class="text-xl pb-2">Event delegation is a technique where a single event listener is added to a parent element to handle events from its children using event bubbling.
+                It’s useful because:</p>
+                <ul class="list-inside list-disc font-bold">
+                  <li>You avoid attaching multiple listeners.</li>
+                  <li>It's efficient for dynamic elements added after the DOM has loaded.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border px-6 py-4">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title font-semibold text-2xl"> How do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-content text-lg text-gray-600">
+                <p class="my-4 text-xl">You can manipulate attributes using:</p>
+                <ul class="list-inside list-disc font-bold">
+                  <li>element.setAttribute('name', 'value')</li>
+                  <li>element.getAttribute('name')</li>
+                </ul>
+                <p class="mt-4 text-xl">And manipulate styles using:</p>
+                <ul class="list-inside list-disc font-bold mt-2">
+                  <li>element.style.property = 'value'</li>
+                </ul>
+                <p class="text-xl">Example: <span class="font-bold text-lg">element.style.color = 'red';</span></p>
+              </div>
             </div>
           </div>
         </div>

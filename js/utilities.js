@@ -32,7 +32,3 @@ function showConfirmationModal(){
     document.getElementById('my_modal_5').showModal();
 
 }
-
-function secActiveButton(){
-    const btnDonation = document.getElementById('')
-}

@@ -4,9 +4,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
     const donetedNoakhali = getTextValue('doneted-noakhali');
     const bankMoney = getTextValue('bank-money');
 
-
-
-    if(!isNaN(donateForNoakhali) && donateForNoakhali > 0 && donateForNoakhali < bankMoney){
+    if(!isNaN(donateForNoakhali) && donateForNoakhali >=1 && donateForNoakhali < bankMoney){
         const totalDonation = donetedNoakhali + donateForNoakhali;
         const remainingMoney = bankMoney - donateForNoakhali;
 
@@ -20,7 +18,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
         div.classList.add('space-y-5', 'p-8', 'border', 'rounded-2xl');
         div.innerHTML = `
             <h2 class="text-2xl font-bold">${donateForNoakhali} Taka Donated for Flood Relief at Noakhali, Bangladesh</h2>
-            <p class="text-lg text-gray-500">Date : ${date} </p>
+            <p class="text-lg text-gray-500 p-4 rounded-lg bg-slate-50">Date : ${date} </p>
         `
         document.getElementById('show-history').appendChild(div);
     }
@@ -37,7 +35,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(){
     const donetedFeni = getTextValue('doneted-feni')
     const bankMoney = getTextValue('bank-money')
 
-    if(!isNaN(donateForFeni) && donateForFeni > 0 && donateForFeni < bankMoney){
+    if(!isNaN(donateForFeni) && donateForFeni >=1 && donateForFeni < bankMoney){
         const totalDonation = donetedFeni + donateForFeni;
         const remainingMoney = bankMoney - donateForFeni;
 
@@ -52,7 +50,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(){
         div.classList.add('space-y-5', 'p-8', 'border', 'rounded-2xl');
         div.innerHTML = `
             <h2 class="text-2xl font-bold">${donateForFeni} Taka is Donated for Flood Relief in Feni,Bangladesh</h2>
-            <p class="text-lg text-gray-500">Date : ${date} </p>
+            <p class="text-lg text-gray-500 p-4 rounded-lg bg-slate-50">Date : ${date} </p>
         `
         document.getElementById('show-history').appendChild(div);
     }
@@ -69,7 +67,7 @@ document.getElementById('btn-donate-injured').addEventListener('click', function
     const donetedInjured = getTextValue('doneted-injured')
     const bankMoney = getTextValue('bank-money')
 
-    if(!isNaN(donateForInjured) && donateForInjured > 0 && donateForInjured < bankMoney){
+    if(!isNaN(donateForInjured) && donateForInjured >= 1 && donateForInjured < bankMoney){
         const totalDonation = donetedInjured + donateForInjured;
         const remainingMoney = bankMoney - donateForInjured;
 
@@ -84,7 +82,7 @@ document.getElementById('btn-donate-injured').addEventListener('click', function
         div.classList.add('space-y-5', 'p-8', 'border', 'rounded-2xl');
         div.innerHTML = `
             <h2 class="text-2xl font-bold">${donateForInjured} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2>
-            <p class="text-lg text-gray-500">Date : ${date} </p>
+            <p class="text-lg text-gray-500 p-4 rounded-lg bg-slate-50">Date : ${date} </p>
         `
         document.getElementById('show-history').appendChild(div);
     }
