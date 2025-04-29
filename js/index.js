@@ -14,6 +14,15 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
         document.getElementById('bank-money').innerText = remainingMoney;
         document.getElementById('input-noakhali').value = '';
         showConfirmationModal();
+
+        const div = document.createElement('div');
+        const date = new Date().toString()
+        div.classList.add('space-y-5', 'p-8', 'border', 'rounded-2xl');
+        div.innerHTML = `
+            <h2 class="text-2xl font-bold">${donateForNoakhali} Taka Donated for Flood Relief at Noakhali, Bangladesh</h2>
+            <p class="text-lg text-gray-500">Date : ${date} </p>
+        `
+        document.getElementById('show-history').appendChild(div);
     }
     else{
         alert('Invalid Donation Amount')
@@ -35,8 +44,17 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(){
         document.getElementById('doneted-feni').innerText = totalDonation;
         document.getElementById('bank-money').innerText = remainingMoney;
         document.getElementById('input-feni').value = '';
-
+        
         showConfirmationModal();
+
+        const div = document.createElement('div');
+        const date = new Date().toString()
+        div.classList.add('space-y-5', 'p-8', 'border', 'rounded-2xl');
+        div.innerHTML = `
+            <h2 class="text-2xl font-bold">${donateForFeni} Taka is Donated for Flood Relief in Feni,Bangladesh</h2>
+            <p class="text-lg text-gray-500">Date : ${date} </p>
+        `
+        document.getElementById('show-history').appendChild(div);
     }
     else{
         alert('Invalid Donation Amount')
@@ -60,6 +78,15 @@ document.getElementById('btn-donate-injured').addEventListener('click', function
         document.getElementById('input-injured').value = '';
 
         showConfirmationModal();
+
+        const div = document.createElement('div');
+        const date = new Date().toString()
+        div.classList.add('space-y-5', 'p-8', 'border', 'rounded-2xl');
+        div.innerHTML = `
+            <h2 class="text-2xl font-bold">${donateForInjured} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2>
+            <p class="text-lg text-gray-500">Date : ${date} </p>
+        `
+        document.getElementById('show-history').appendChild(div);
     }
     else{
         alert('Invalid Donation Amount')

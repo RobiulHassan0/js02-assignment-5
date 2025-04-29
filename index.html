@@ -61,7 +61,7 @@
       </nav>
       <!-- Switching Button -->
       <div class="w-full flex justify-center gap-6 pb-4">
-        <button id="btn-donation" class="bg-[#B4F461] shadow-sm rounded-lg text-xl px-12 py-4 font-bold">Donation</button>
+        <button id="btn-donation" class="shadow-sm rounded-lg text-xl px-12 py-4 font-bold bg-[#B4F461]">Donation</button>
         <button id="btn-history" class="border-2 shadow-sm border-[rgba(17,17,17,0.3)] rounded-lg text-xl text-[rgba(17,17,17,0.6)] px-12 py-4 font-bold">History</button>
       </div>
       <!-- Horizontal Line -->
@@ -91,7 +91,7 @@
               <div class="flex flex-col gap-8">
                 <input type="text" id="input-noakhali"
                 class="input validator font-light input-bordered py-7"
-                required autocomplete="off"
+                required autocomplete="off" min="1"
                 placeholder="Write Donation Amount"/>
                 <button id="btn-donate-noakhali" class="bg-[#B4F461] rounded-lg text-xl py-4 font-bold">Donate Now</button>
               </div>
@@ -115,6 +115,7 @@
                 <input type="number"
                 class="input validator font-light input-bordered py-7"
                 required id="input-feni"
+                min="1" autocomplete="off"
                 placeholder="Write Donation Amount"
                 title="Donation amount must be a positive number"/>
                 <button id="btn-donate-feni" class="bg-[#B4F461] rounded-lg text-xl py-4 font-bold">Donate Now</button>
@@ -139,6 +140,7 @@
                 <input type="number"
                 class="input validator font-light input-bordered py-7"
                 required id="input-injured"
+                autocomplete="off" min="1"
                 placeholder="Write Donation Amount"/>
                 <button id="btn-donate-injured" class="bg-[#B4F461] rounded-lg text-xl py-4 font-bold">Donate Now</button>
               </div>
@@ -148,11 +150,11 @@
       </section>
 
       <!-- History Section -->
-      <section id="show-history" class="hidden max-w-screen-xl mx-auto mt-6 border rounded-2xl">
-        <div class="space-y-4 p-8 ">
-          <!-- <h2 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
-          <p class="text-lg">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p> -->
-        </div>
+      <section id="show-history" class="hidden max-w-screen-xl space-y-4 mx-auto mt-6">
+        <!-- <div class=" ">
+          <h2 class="text-2xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+          <p class="text-lg">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+        </div> -->
       </section>
 
       <!-- Modal Section -->
